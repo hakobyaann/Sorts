@@ -24,9 +24,9 @@ void Merge(int arr[], int first,int mid, int last)
  int l2 = last;
  int index = first;
  
-while((f1 <= l1) && (f2 <= l2))
+while ((f1 <= l1) && (f2 <= l2))
 {
-	if(arr[f1] <= arr[f2])
+	if (arr[f1] <= arr[f2])
 	{
 		temp_arr[index] = arr[f1];
 		++f1;
@@ -39,21 +39,21 @@ while((f1 <= l1) && (f2 <= l2))
 	++index;
 }
 
-while(f1 <= l1)
+while (f1 <= l1)
 {
 	temp_arr[index] = arr[f1];
 	++f1;
 	++index;
 }
 
-while(f2 <= l2)
+while (f2 <= l2)
 {
 	temp_arr[index] = arr[f2];
 	++f2;
 	++index;
 }
 
-for(index = first; index <= last; ++index)
+for (index = first; index <= last; ++index)
 {
 	arr[index] = temp_arr[index];
 }
@@ -61,7 +61,7 @@ for(index = first; index <= last; ++index)
 
 void MergeSort(int arr[], int f, int l)
 {
-    if(f < l)
+    if (f < l)
     {
         int mid = (f + l) / 2;
         MergeSort(arr, f, mid);
