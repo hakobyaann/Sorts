@@ -14,14 +14,12 @@ int main()
 
 void SelectionSort(int* arr, int size)
 {
-    int i = 0;
-    int j = i + 1;
     int tmp;
     int first;
-    for (i = 0; i < size; ++i)
+    for (int i = 0; i < size; ++i)
     {
         first = i;
-        for (j = i + 1; j < size; ++j)
+        for (int j = i + 1; j < size; ++j)
         {
             if (arr[j] < arr[first])
             {
