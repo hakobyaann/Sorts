@@ -14,10 +14,9 @@ int main()
 
 void InsertionSort(int* arr, int size)
 {
-    int i;
-    int j;
-    int key;
-    for (i = 1; i < size; ++i)
+    int j = 0;
+    int key = 0;
+    for (int i = 1; i < size; ++i)
     {
         j = i - 1;
         key = arr[i];
